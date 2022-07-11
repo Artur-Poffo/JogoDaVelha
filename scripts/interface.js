@@ -22,7 +22,7 @@ function EventClick(event) {
 
         setTimeout(() => {
             alert(`O jogo acabou! - O vencedor foi ${winner}`)
-        })
+        }, 300)
     }
 
     updateGame()
