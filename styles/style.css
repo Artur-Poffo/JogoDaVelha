@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.o::after, .x::after {
+    content: "\1F6E1";
+    font-size: 60px;
+}
+
+.x::after {
+    content: "\2694";
+}
+
+#reset {
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    color: bisque;
+    background-color: black;
+    border: 1px solid bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+#reset::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 96%;
+    height: 96%;
+    border: 2px solid coral;
+    opacity: 0;
+}
+
+#reset:hover::after {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
