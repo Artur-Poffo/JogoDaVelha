@@ -15,9 +15,9 @@ function EventClick(event) {
     if(addSym(SelectedSquare.id)) {
 
         if (player == 0) {
-            winner = 'Escudo'
+            winner = 'Círculo'
         } else {
-            winner = 'Espada'
+            winner = 'Xis'
         }
 
         setTimeout(() => {

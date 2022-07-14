@@ -28,19 +28,19 @@ h1 {
 .square {
     width: 100px;
     height: 100px;
-    background-color: bisque;
+    background-color: beige;
     border: 1px solid black;
     margin: 2px;
     cursor: pointer;
 }
 
 .o::after, .x::after {
-    content: "\1F6E1";
+    content: "\26AB";
     font-size: 60px;
 }
 
 .x::after {
-    content: "\2694";
+    content: "\2716";
 }
 
 #reset {
@@ -69,7 +69,7 @@ h1 {
 }
 
 #reset:hover::after {
-    animation: pulse 1s infinite;
+    animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
